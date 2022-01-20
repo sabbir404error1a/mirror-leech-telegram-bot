@@ -228,7 +228,7 @@ class MirrorListener(listeners.MirrorListeners):
             else:
                 uname = f'<a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
             count = len(files)
-            msg = f'╔—●📂<b>Name: </b><code>{link}</code>\n\n'
+            msg = f'╔—●📂<b>Name: </b><code>{link}</code>\n'
             msg += f'╟—●<b>Size: </b>{bot_utils.get_readable_file_size(size)}\n'
             msg += f'╟—●🗂<b>Total Files: </b>{count}'
             if typ != 0:
@@ -253,8 +253,8 @@ class MirrorListener(listeners.MirrorListeners):
             return
 
         with download_dict_lock:
-            msg = f'╔—●<b>Name: </b><code>{download_dict[self.uid].name()}</code>\n\n╟—●<b>Size: </b>{size}'
-            msg += f'\n\n╟—●<b>Type: </b>{typ}'
+            msg = f'╔—●<b>Name: </b><code>{download_dict[self.uid].name()}</code>\n╟—●<b>Size: </b>{size}'
+            msg += f'\n╟—●<b>Type: </b>{typ}'
             if os.path.isdir(f'{DOWNLOAD_DIR}/{self.uid}/{download_dict[self.uid].name()}'):
                 msg += f'\n╟—●<b>SubFolders: </b>{folders}'
                 msg += f'\n╟—●<b>Files: </b>{files}'
@@ -287,7 +287,7 @@ class MirrorListener(listeners.MirrorListeners):
             else:
                 uname = f'<a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
             if uname is not None:
-                msg += f'\n\n╚—●<b>cc: </b>{uname}'
+                msg += f'\n╚—●<b>cc: </b>{uname}'
         if self.isQbit and QB_SEED:
            return sendMarkup(msg, self.bot, self.update, InlineKeyboardMarkup(buttons.build_menu(2)))
         else:
