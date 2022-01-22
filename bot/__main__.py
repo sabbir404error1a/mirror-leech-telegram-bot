@@ -73,7 +73,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
-        sendMarkup('hi', context.bot, update, reply_markup)
+        sendMarkup('𝐍𝐨𝐭 𝐀𝐮𝐭𝐡𝐨𝐫𝐢𝐳𝐞𝐝 𝐔𝐬𝐞𝐫. 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 <b>@andresde141</b>', context.bot, update, reply_markup)
 
 def restart(update, context):
     restart_message = sendMessage("Restarting...", context.bot, update)
