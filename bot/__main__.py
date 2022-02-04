@@ -43,7 +43,7 @@ def stats(update, context):
     mem_t = get_readable_file_size(memory.total)
     mem_a = get_readable_file_size(memory.available)
     mem_u = get_readable_file_size(memory.used)
-    stats = f'╭───《⟹ <b>Uncensored Playground Mirror ⟸</b>》\n│\n'\
+    stats = f'╭───《♦️⟹ <b>Bangladesh Hoarding ⟸</b>》♦️\n│\n'\
     f'├─<b>Bot Uptime:</b> {currentTime}\n'\
             f'├─📀<b>Total Disk Space:</b> {total}\n'\
             f'├─💽<b>Used:</b> {used} | <b>Free:</b> {free}\n'\
@@ -64,7 +64,7 @@ def stats(update, context):
 def start(update, context):
     buttons = button_build.ButtonMaker()
     buttons.buildbutton("Owner", "https://t.me/andresde141")
-    buttons.buildbutton("Group", "https://t.me/UncensoredPlaygrounds")
+    buttons.buildbutton("Group", "https://t.me/Bangladeshhoarding")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
