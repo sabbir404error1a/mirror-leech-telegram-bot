@@ -255,7 +255,7 @@ def main():
         os.remove(".restartmsg")
     elif OWNER_ID:
         try:
-            text = "<b>BOT RESTARTED!...𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴-MIRROR 𝙰𝙶𝙰𝙸𝙽</b>\n\n\'❤️@bangladeshhoarding❤️"
+            text = "<b>BOT RESTARTED!...𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴-MIRROR 𝙰𝙶𝙰𝙸𝙽</b>\n\n\❤️@bangladeshhoarding❤️"
             bot.sendMessage(chat_id=OWNER_ID, text=text, parse_mode=ParseMode.HTML)
             if AUTHORIZED_CHATS:
                 for i in AUTHORIZED_CHATS:
