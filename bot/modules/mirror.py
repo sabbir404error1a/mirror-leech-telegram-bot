@@ -237,7 +237,7 @@ class MirrorListener(listeners.MirrorListeners):
                 sendMessage(msg, self.bot, self.update)
             else:
                 chat_id = str(self.message.chat.id)[4:]
-                msg += f'\n╚—●<b>cc: </b>{uname}\n\n'
+                msg += f'\n╚—●<b>uploaded by: </b>{uname}\n│\n'\Powered By 👉 @bangladeshhoarding'
                 fmsg = ''
                 for index, item in enumerate(list(files), start=1):
                     msg_id = files[item]
@@ -287,7 +287,7 @@ class MirrorListener(listeners.MirrorListeners):
             else:
                 uname = f'<a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
             if uname is not None:
-                msg += f'\n╚—●<b>cc: </b>{uname}'
+                msg += f'\n╚—●<b>Uploaded by: </b>{uname}n│\n'\Powered By 👉 @bangladeshhoarding'
         if self.isQbit and QB_SEED:
            return sendMarkup(msg, self.bot, self.update, InlineKeyboardMarkup(buttons.build_menu(2)))
         else:
