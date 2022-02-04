@@ -43,7 +43,7 @@ def stats(update, context):
     mem_t = get_readable_file_size(memory.total)
     mem_a = get_readable_file_size(memory.available)
     mem_u = get_readable_file_size(memory.used)
-    stats = f'╭───《♦️⟹ <b>Bangladesh Hoarding ⟸</b>》♦️\n│\n'\
+    stats = f'╭───♦️《⟹ <b>Bangladesh Hoarding ⟸</b>》♦️\n│\n'\
     f'├─<b>Bot Uptime:</b> {currentTime}\n'\
             f'├─📀<b>Total Disk Space:</b> {total}\n'\
             f'├─💽<b>Used:</b> {used} | <b>Free:</b> {free}\n'\
@@ -255,7 +255,7 @@ def main():
         os.remove(".restartmsg")
     elif OWNER_ID:
         try:
-            text = "<b>Bot Restarted!</b>"
+            text = "<b>BOT RESTARTED!...𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴-MIRROR 𝙰𝙶𝙰𝙸𝙽</b>\n'❤️@bangladeshhoarding❤️"
             bot.sendMessage(chat_id=OWNER_ID, text=text, parse_mode=ParseMode.HTML)
             if AUTHORIZED_CHATS:
                 for i in AUTHORIZED_CHATS:
