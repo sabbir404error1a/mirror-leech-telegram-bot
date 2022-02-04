@@ -287,7 +287,7 @@ class MirrorListener(listeners.MirrorListeners):
             else:
                 uname = f'<a href="tg://user?id={self.message.from_user.id}">{self.message.from_user.first_name}</a>'
             if uname is not None:
-                msg += f'\n╚—●<b>Uploaded by: </b>{uname}n\n'\Powered By 👉 @bangladeshhoarding'
+                msg += f'\n╚—●<b>Uploaded by: </b>{uname}'
         if self.isQbit and QB_SEED:
            return sendMarkup(msg, self.bot, self.update, InlineKeyboardMarkup(buttons.build_menu(2)))
         else:
