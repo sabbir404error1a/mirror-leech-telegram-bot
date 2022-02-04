@@ -237,7 +237,7 @@ class MirrorListener(listeners.MirrorListeners):
                 sendMessage(msg, self.bot, self.update)
             else:
                 chat_id = str(self.message.chat.id)[4:]
-                msg += f'\n╚—●<b>uploaded by: </b>{uname}\n\n'\Powered By 👉 @bangladeshhoarding'
+                msg += f'\n╚—●<b>uploaded by: </b>{uname}\n\n'
                 fmsg = ''
                 for index, item in enumerate(list(files), start=1):
                     msg_id = files[item]
